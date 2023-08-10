@@ -1,0 +1,232 @@
+
+  .logo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 30px;
+    position: relative; 
+}
+  
+  .logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto; 
+}
+  /* The below class is to style the text just below the google logo on image search page */
+  .logo span {
+    position: relative;   
+    margin-left: 215px;
+    margin-top: -15px;   
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;      
+}
+  
+
+.nav_bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute items evenly along the container */
+    align-items: center; /* Center items vertically within the container */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.as_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+
+
+.nav_item {
+    margin: 12px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+.formquery_field {
+    display: flex;
+    justify-content: center;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 800px;
+    padding-inline-start: 30px;
+
+}
+
+.formquery_field:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.buttons {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.search_button {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search_button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.search_button:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+.as_heading {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+
+.as_seprator {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.as_form {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 40px 2% 0 45px;
+}
+
+.grid-container {
+    display: grid;
+    max-width: 95%;
+    grid-template-columns: minmax(150px, 1fr) minmax(167px, 3fr) minmax(160px, 1fr);
+}
+
+@media (max-width: 768px) {
+    .grid-container > .data-col-3 {
+      display: none;
+    }
+
+    .grid-container > .heading-3 {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: minmax(167px, 1fr) minmax(167px, 1fr);
+    }
+
+    .grid-container > .data-col-2 > input[type="submit"] {
+        margin-right: 8%;
+    }
+
+    .grid-container > .data-col-2 > input[type="text"] {
+        width: 90%;
+    }
+  
+  }
+  
+.grid-container > div {
+    padding: 5px 0;
+}
+
+.grid-container > .heading-1 {
+    min-width: 167px;
+    font-size: 16px;
+    min-height: 42px;
+    font-weight: 500;
+    color: #333;
+}
+
+.grid-container > .heading-3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+    padding-left: 20px;
+}
+
+.grid-container > .data-col-1 {
+    min-width: 167px;
+    color: #222;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.grid-container > .data-col-2 {
+    min-width: 167px;
+    min-height: 41px;
+}
+
+.grid-container > .data-col-2 > input[type="text"] {
+    width: 91%;
+    text-align: left;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 25px;
+    min-height: 12px;
+}
+
+.grid-container > .data-col-3 {
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+}
+
+.grid-container > .data-col-2 > input[type="submit"] {
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    float: right;
+    margin-right: 8%;
+}
+
+.as_logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+}
